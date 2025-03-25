@@ -1,0 +1,122 @@
+<header id="header" class="layout01" data-ez-layout="layout01" data-ez="contents-0x2iz04-1">
+	<ez-prop data-version="1.0.0" type="layout">
+		<ez-var data-prop="layout" data-namespace="ez.layout.header.layout" data-type="array">
+			<ez-item data-id="layout01" data-name="1단 기본형"></ez-item>
+			<ez-item data-id="layout04" data-name="1단 로고 우측형"></ez-item>
+			<ez-item data-id="layout03" data-name="2단 좌측형"></ez-item>
+			<ez-item data-id="layout02" data-name="2단 중앙형"></ez-item>
+            <ez-item data-id="layout05" data-name="2단 슬라이딩 메뉴 노출형"></ez-item>
+  	    </ez-var>
+	</ez-prop>
+	<div class="inner">
+		<div class="toparea display_pc_only">
+			<div class="toparea_shoppinginfo">
+				<div module="Layout_multishopList">
+					<button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i></button>
+					<ul module="Layout_multishopListitem">
+						<li class="{$selected_class}">
+							<a href="//{$shop_domain}/">{$locale_language}</a>
+						</li>
+						<li class="{$selected_class}">
+							<a href="//{$shop_domain}/">{$locale_language}</a>
+						</li>
+					</ul>
+				<!-- 좌상단 적립금/쿠폰 내역 노출 </div>
+                <div data-ez-group="shopping-info" data-ez-role="list">
+				<ul module="Layout_shoppingInfo">
+					<li class="{$use_mileage|display}"><a href="/myshop/mileage/historyList.html">적립금 내역 <strong>{$mileage}</strong></a></li>
+					<li class="{$use_deposit|display}"><a href="/myshop/deposits/historyList.html">{$deposit_name} <strong>{$deposit}</strong></a></li>
+					<li class="{$use_coupon_cnt|display}"><a href="/myshop/coupon/coupon.html">쿠폰 내역<strong>{$coupon_cnt}</strong></a></li>
+					<li class="{$use_like_product_cnt|display}">{$like_prd_tag}</li>
+				</ul> -->
+                </div>
+			</div><!-- //toparea_shoppinginfo -->
+
+			<div class="toparea_state" data-ez-group="top-util-menu" data-ez-role="list">
+				<a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">JOIN</a>
+				<a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">LOGIN</a>
+				<a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">LOGOUT</a>
+                <!-- MY PAGE 드롭다운 -->
+                    <div class="toparea_state_board">
+                        <a data-ez-item="mypage" href="#none" class="toggle-mypage">MY PAGE<i aria-hidden="true" class="icon icoArrowBottom"></i></a>
+                        <ul module="Layout_BoardInfo" class="dropdown-menu mypage-menu">
+                            <li><a data-ez-item="modify" href="/myshop/index.html">마이페이지</a></li>
+                            <li><a data-ez-item="order" href="/myshop/order/list.html">주문내역</a></li>
+                            <li><a href="/order/basket.html">장바구니</a></li>
+                            <li><a href="/myshop/wish_list.html">관심상품</a></li>
+                            <li><a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- COMMUNITY 드롭다운 
+                    <div class="toparea_state_board">
+                        <a data-ez-item="board" href="#none" class="toggle-community">COMMUNITY<i aria-hidden="true" class="icon icoArrowBottom"></i></a>
+                        <ul module="Layout_BoardInfo" class="dropdown-menu community-menu">
+                            <li><a href="{$link_board_list}">{$board_name}</a></li>
+                            <li><a href="{$link_board_list}">{$board_name}</a></li>
+                        </ul>
+                    </div> -->
+			</div><!-- //toparea_state -->
+		</div><!-- //toparea -->
+
+		<div class="top_nav_box" id="top_nav_box">
+			<div class="top_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}"></a></div><!-- //top_logo -->
+
+			<div data-ez-module="menu-main/1" data-ez-mode="manual">
+        <div class="xans-element- xans-layout xans-layout-category top_category">
+<ul><li><a href="/category/BEST/76/">BEST ~50% 🖤</a></li><li><a href="/category/NEW/77/">NEW</a></li><li><a href="/category/SLAE/78/">SALE</a></li><li><a href="/category/Outer/44/">아우터</a><ul class="sub_cate01"><li><a href="/category/Jacket/55/">자켓</a></li><li><a href="/category/Coat/56/">코트</a></li><li><a href="/category/Jumper/57/">점퍼</a></li></ul></li><li><a href="/category/Top/58/">티셔츠</a><ul class="sub_cate01"><li><a href="/category/Tee/59/">티셔츠</a></li><li><a href="/category/MTMHood/66/">맨투팬/후드</a></li><li><a href="/category/Blouse/67/">블라우스/셔츠</a></li><li><a href="/category/Vest/79/">조끼</a></li></ul></li><li><a href="/category/Knitwear/42/">니트/가디건</a><ul class="sub_cate01"><li><a href="/category/Knit/48/">니트</a></li><li><a href="/category/Cardigan/49/">가디건</a></li></ul></li><li><a href="/category/Pants/43/">팬츠</a><ul class="sub_cate01"><li><a href="/category/Denim/60/">데님</a></li><li><a href="/category/Cotton/65/">면팬츠</a></li><li><a href="/category/Shorts/61/">반바지</a></li></ul></li><li><a href="/category/DressSkirt/45/">원피스/스커트</a><ul class="sub_cate01"><li><a href="/category/Dress/63/">원피스</a></li><li><a href="/category/Skirt/64/">스커트</a></li></ul></li><li><a href="/category/Acc/47/">악세서리</a></li>
+ <!-- Community 토글 메뉴 추가 -->
+    <li><a href="#none">Community</a><ul class="sub_cate01">
+    	<li><a href="/skin-skin3/board/공지사항/1/">공지사항</a></li>
+        <li><a href="/skin-skin3/board/qa/6/">Q&amp;A</a></li>
+        <li><a href="/skin-skin3/board/faq/3/">FAQ</a></li>
+        <li><a href="/skin-skin3/board/faq/4/">REVIEW</a></li>
+      </ul>
+</li></ul></div>
+      </div><!-- //menu-main/1 -->
+
+			<ul class="top_mypage">
+				<li><a href="/myshop/index.html"><!--@import(/svg/icon-user.html)--></a></li>
+				<li><a href="/order/basket.html" module="Layout_orderBasketcount"><!--@import(/svg/icon-cart.html)--><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a></li>
+				<li class="top_search"><a href="javascript:;" class="eSearch"><!--@import(/svg/icon-search.html)--></a></li>
+				<li class="mo_nav"><a href="javascript:;" class="eNavFold"><img alt src="//ecimg.cafe24img.com/pg1548b12536911098/orbedge/web/upload/asset/nav_menu.png" width="17"><!--<i aria-hidden="true" class="icon icoNav"></i>--></a></li>
+			</ul><!-- //top_mypage -->
+		</div><!-- //top_nav_box -->
+
+		<div module="Layout_SearchHeader">
+			<!--
+				$product_page=/product/detail.html
+				$category_page=/product/list.html
+			-->
+			<fieldset>
+				<legend>검색</legend>
+				<div class="wrap_search_box">
+					<div class="search_find_product">Find Product</div>
+					<div class="top_search_box">
+						<button type="button" class="btnClose"><img src="/SkinImg/img/pc_search_close.svg" alt="닫기"></button>
+						{$form.keyword}<button type="button" class="btnDelete">삭제</button><button type="button" class="btnSearch" onclick="{$action_search_submit}"><img src="/SkinImg/img/top_search.svg" alt="검색"></button><ul class="autoDrop" id="{$search_auto_id}"></ul>
+					</div><!-- //top_search_box -->
+				</div>
+			</fieldset>
+		</div><!-- //Layout_SearchHeader -->
+	</div><!-- //inner -->
+</header>
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-0uy4a17-1"><script type="text/javascript">
+    // MY PAGE 토글을 클릭했을 때
+    document.querySelector('.toggle-mypage').addEventListener('click', function(event) {
+        event.stopPropagation();  // 클릭 이벤트 전파를 막아, 다른 클릭이 영향을 미치지 않게 함
+        var dropdownMenu = document.querySelector('.mypage-menu');
+        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // 문서의 다른 부분을 클릭하면 드롭다운 닫기
+    document.addEventListener('click', function(event) {
+        var dropdownMenu = document.querySelector('.mypage-menu');
+        var toggleButton = document.querySelector('.toggle-mypage');
+        // 마이페이지 드롭다운 영역이 아닌 곳을 클릭했을 때만 닫히도록 함
+        if (!toggleButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = 'none';
+        }
+    });
+</script></div>
+<!--#ez="1/16"-->

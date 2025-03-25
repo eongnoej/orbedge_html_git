@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://orbedge.cafe24.com/sitemap.xml

@@ -1,0 +1,55 @@
+<aside id="aside" module="layout_slidePackage" data-ez="contents-04f55sr-1">
+    <!--@css(/layout/basic/css/slideMenu.css)-->
+	<!--@js(/layout/basic/js/slide_menu.js)-->
+    <nav class="navigation-menu" role="navigation">
+
+		<div class="top_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}"></a></div>
+
+        <div class="navigation-menu__member" data-ez-group="top-util-menu" data-ez-role="list">
+            <!-- 비로그인 상태 -->
+            <p class="state-logoff">
+                <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+                <a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+            </p>
+            <!-- 로그인 상태 -->
+            <p class="state-logon">
+                <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+                <a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+
+            </p>
+            <!-- 공통 메뉴 -->
+            <p>
+                <a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+                <a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
+            </p>
+        </div><!-- //navigation_state -->
+        
+		<div data-ez-module="menu-side/1"><div id="slideCateList" class="navigation-menu__category">
+  <ul id="slide_add_category"><li><a href="/category/BEST/76/" class="view">BEST ~50% 🖤</a></li><li><a href="/category/NEW/77/" class="view">NEW</a></li><li><a href="/category/SLAE/78/" class="view">SALE</a></li><li><a href="/category/Outer/44/" class="view">아우터</a><ul class="sub_cate01"><li><a href="/category/Jacket/55/" class="view">자켓</a></li><li><a href="/category/Coat/56/" class="view">코트</a></li><li><a href="/category/Jumper/57/" class="view">점퍼</a></li></ul></li><li><a href="/category/Top/58/" class="view">티셔츠</a><ul class="sub_cate01"><li><a href="/category/Tee/59/" class="view">티셔츠</a></li><li><a href="/category/MTMHood/66/" class="view">맨투맨/후드</a></li><li><a href="/category/Blouse/67/" class="view">블라우스/셔츠</a></li></ul></li><li><a href="/category/Knitwear/42/" class="view">니트/가디건</a><ul class="sub_cate01"><li><a href="/category/Knit/48/" class="view">니트</a></li><li><a href="/category/Cardigan/49/" class="view">가디건</a></li></ul></li><li><a href="/category/Pants/43/" class="view">팬츠</a><ul class="sub_cate01"><li><a href="/category/Denim/60/" class="view">데님</a></li><li><a href="/category/Cotton/65/" class="view">면팬츠</a></li><li><a href="/category/Shorts/61/" class="view">반바지</a></li></ul></li><li><a href="/category/DressSkirt/45/" class="view">원피스/스커트</a><ul class="sub_cate01"><li><a href="/category/Dress/63/" class="view">원피스</a></li><li><a href="/category/Skirt/64/" class="view">스커트</a></li></ul></li><li><a href="/category/Acc/47/" class="view">악세서리</a></li>
+      <!-- <li><a href="#none" class="view">Community</a><ul class="sub_cate01"><li><a href="/skin-skin3/board/공지사항/1/" class="view">공지사항</a></li><li><a href="/skin-skin3/board/qa/6/" class="view">Q&amp;A</a></li><li><a href="/skin-skin3/board/faq/3/" class="view">FAQ</a></li></ul></li> -->
+            </ul>
+  </div></div><!-- //menu-side/1 -->
+
+        <div module="Layout_BoardInfo" class="navigation-menu__board">
+            <div class="title">Community<button type="button" class="icoCategory">펼침</button></div>
+            <ul class="categoryList">
+                <li class="menu"><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+                <li class="menu"><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+            </ul>
+        </div><!-- //tab_community -->
+
+		<div module="Layout_multishopList">
+			<button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i></button>
+			<ul module="Layout_multishopListitem">
+				<li class="{$selected_class}">
+					<a href="//{$shop_domain}/">{$locale_language}</a>
+				</li>
+				<li class="{$selected_class}">
+					<a href="//{$shop_domain}/">{$locale_language}</a>
+				</li>
+			</ul>
+		</div>
+    </nav>
+    <button type="button" class="btnClose"><img src="/SkinImg/img/sldiebar_close.svg" alt="닫기"></button>
+</aside>
+<!--#ez="1/16"-->

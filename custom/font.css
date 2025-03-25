@@ -1,0 +1,10 @@
+/*pretendard*/
+/*body,code { font-family:"Pretendard Variable", Pretendard, Dotum, 돋움, Gulim, 굴림, monospace, "Trebuchet MS",  Sans-serif; } */
+
+@font-face {
+  font-family: 'Pretendard Variable';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//ecimg.cafe24img.com/pg1548b12536911098/orbedge/web/upload/font/Pretendard-Regular.woff) format('woff'),
+}
+body,input,textarea,select,button { font-family:"Pretendard Variable", Pretendard, Nan um Gothic,'나눔고딕','맑은 고딕', 'Malgun Gothic','돋움', dotum, sans-serif; }
